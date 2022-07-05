@@ -1,0 +1,101 @@
+<%- include ('../partials/header'); -%>
+<div class="" style="padding: 0 25% 0 25%">
+
+<form class="" action="/seller/<%=seller._id%>/settings/?_method=PUT" method="post">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="name" placeholder="Your name" value="<%= seller.name %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="username" placeholder="Your email" value="<%= seller.username %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="number" name="mobile" placeholder="Mobile" onkeydown="limit(this);" onkeyup="limit(this);" value="<%= seller.mobile %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="addline1" placeholder="Address line one" value="<%= seller.addline1 %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="addline2" placeholder="Address line two" value="<%= seller.addline2 %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="city" placeholder="City" value="<%= seller.city %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="Number" name="zipcode" placeholder="Zipcode" onkeydown="limitt(this);" onkeyup="limitt(this);" value="<%= seller.zipcode %>" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="state" placeholder="State" value="<%= seller.state %>" required>
+  <select style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" name="country" size="1" placeholder="Country" value="<%= seller.country %>" required>
+    <option value="India" selected>India</option>
+  </select>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="store" placeholder="Store">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="category" placeholder="Category">
+  <button style="background-color: black;
+    color: white;
+    padding: 4px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    border-radius: 5%;
+    font-family: 'Manrope', sans-serif;">Save changes</button>
+</form>
+
+</div>
+<%- include ('../partials/footer'); -%>

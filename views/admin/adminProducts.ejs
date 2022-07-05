@@ -1,0 +1,45 @@
+<div class="" style="padding-left: 5%; padding-right: 5%;">
+
+
+
+<% item.forEach(function(item){ %>
+<p>
+  <a style="text-decoration: none; font-family: 'Manrope', sans-serif;" href="/items/<%= item._id %>">
+  <p style="font-family: 'Manrope', sans-serif;"><%= item.name%></p>
+  </a>
+  <img style="height:300px; box-shadow: 0 0 3px #1F51FF, 0 0 4px #1F51FF;" src="/image/<%= item.image %>" alt="ok" >
+  <a style="background-color: black;
+    color: white;
+    padding: 4px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    border-radius: 5%;
+    font-family: 'Manrope', sans-serif;" href="/items/<%= item._id %>">Edit</a>
+  <form class="" action="/items/<%=item._id%>?_method=DELETE" method="post">
+  <button style="background-color: black;
+    color: white;
+    padding: 4px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    border-radius: 5%;
+    font-family: 'Manrope', sans-serif;">Delete</button>
+  </form>
+
+</p>
+<% }); %>
+
+</div>

@@ -1,0 +1,97 @@
+<%- include ('../partials/header'); -%>
+
+<div class="" style="padding: 0 25% 0 25%">
+
+  <h1 style="text-shadow: 0 0 1px #1F51FF, 0 0 1px #1F51FF;
+  font-family: 'Manrope', sans-serif;">Edit your item</h1>
+
+<form class="" action="/seller/<%= seller_id %>/items/<%= item._id %>?_method=PUT" method="post">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="name" placeholder="name" value="<%= item.name %>" onkeydown="texx(this);" onkeyup="texx(this);" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="Number" name="price" placeholder="price" value="<%= item.price %>" onkeydown="limix(this);" onkeyup="limix(this);" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" list="browsers" name="category" placeholder="category" value="<%= item.category.name %>" onkeydown="texx(this);" onkeyup="texx(this);" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="Number" name="quantity" placeholder="quantity" value="<%= item.quantity %>" onkeydown="limix(this);" onkeyup="limix(this);" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="description" placeholder="description" value="<%= item.description %>" onkeydown="texx(this);" onkeyup="texx(this);" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="material" placeholder="material" value="<%= item.weight %>" onkeydown="texx(this);" onkeyup="texx(this);" required>
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="Number" name="weight" placeholder="weight in grams (eg: 1000)" value="<%= item.weight %>" onkeydown="limix(this);" onkeyup="limix(this);" required>
+  <datalist id="browsers">
+    <% category.forEach(function(category){ %>
+  <option value="<%= category.name%>">
+  <% }); %>
+  </datalist>
+  <button style="background-color: black;
+    color: white;
+    padding: 4px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    border-radius: 5%;
+    font-family: 'Manrope', sans-serif;">Submit</button>
+</form>
+
+
+<a style="background-color: black;
+  color: white;
+  padding: 4px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+  box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+  border-radius: 5%;
+  font-family: 'Manrope', sans-serif;" href="/seller/<%= seller_id %>/items">Cancel</a>
+
+
+</div>
+<%- include ('../partials/footer'); -%>

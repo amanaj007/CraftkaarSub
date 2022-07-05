@@ -1,0 +1,12 @@
+<div class="" style="padding-left: 5%; padding-right: 5%;">
+
+
+<% category.forEach(function(category){ %>
+
+  <a style="text-decoration:none; list-style:none;" href="/category/<%= category._id %>">
+  <p style="font-family: 'Manrope', sans-serif;"> <%= category.name%> </p>
+  </a>
+
+<% }); %>
+
+</div>

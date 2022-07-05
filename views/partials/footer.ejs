@@ -1,0 +1,69 @@
+
+<div class="" style="position: fixed; z-index: 1500; right: 50px; bottom: 50px; font-size: 31px; background-color: #4dc247; border-radius: 50%; align-items: center; justify-content: center;">
+  <a href="https://wa.me/917000530586"><span><i class="fab fa-whatsapp" style="fill: white; padding-right: 6px; color: white; justify-content: center; padding-left: 6px; padding-top: 4px; padding-bottom: 0px;"></i></span></a>
+</div>
+
+<script>
+function openNav() {
+    if (screen.width < 768) {
+      document.getElementById("mySidenav").style.width = "70%";
+    } else {
+      document.getElementById("mySidenav").style.width = "30%";
+    }
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+<script type="text/javascript">
+
+function limix(element)
+{
+    var max_chars = 6;
+
+    if(element.value.length > max_chars) {
+        element.value = element.value.substr(0, max_chars);
+    }
+}
+
+</script>
+
+<script type="text/javascript">
+
+function texx(element)
+{
+    var max_chars = 250;
+
+    if(element.value.length > max_chars) {
+        element.value = element.value.substr(0, max_chars);
+    }
+}
+
+</script>
+
+
+
+</body>
+</html>

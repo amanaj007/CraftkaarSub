@@ -1,0 +1,78 @@
+<%- include ('../partials/header'); -%>
+<div class="" style="padding: 0 25% 0 25%">
+
+<form class="" action="/seller/<%=seller._id%>/payment/?_method=PUT" method="post">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="bank" placeholder="bank account" value="<%= seller.bank %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="ifsc" placeholder="ifsc" value="<%= seller.ifsc %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="bankname" placeholder="bank name" value="<%= seller.bankname %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="gst" placeholder="GST" value="<%= seller.gst %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="pan" placeholder="Pan" value="<%= seller.pan %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="phonepe" placeholder="PhonePe" value="<%= seller.phonepe %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="paytm" placeholder="Paytm" value="<%= seller.paytm %>">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="text" name="googlepay" placeholder="Google Pay" value="<%= seller.googlepay %>">
+  <button style="background-color: black;
+    color: white;
+    padding: 4px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    border-radius: 5%;
+    font-family: 'Manrope', sans-serif;">Save changes</button>
+</form>
+
+</div>
+<%- include ('../partials/footer'); -%>

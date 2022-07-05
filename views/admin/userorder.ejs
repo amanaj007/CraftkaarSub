@@ -1,0 +1,32 @@
+<div class="" style="padding-left: 5%; padding-right: 5%;">
+
+
+<% result.forEach(result => { %>
+  <div class="" style="padding-bottom: 20px;">
+
+
+  <p style="font-family: 'Manrope', sans-serif; background-color:#F1F1F1; font-weight:bold;">Item name: <%= result.name %></p>
+  <img style="height:300px; box-shadow: 0 0 3px #1F51FF, 0 0 4px #1F51FF;" src="/image/<%= result.image %>" alt="ok" >
+  <p style="font-family: 'Manrope', sans-serif;">Amount: <%= result.amount %></p>
+  <p style="font-family: 'Manrope', sans-serif;">quantity: <%= result.qty %></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller email: <%= result.sellerEmail %></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller name: <%=result.sellerName%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller mobile: <%=result.sellerMobile%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller Address Line 1: <%=result.sellerAddline1%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller Address Line 2: <%=result.sellerAddline2%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller City: <%=result.sellerCity%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller zipcode: <%=result.sellerZipcode%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller State: <%=result.sellerState%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Seller country: <%=result.sellerCountry%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer email: <%=result.buyerEmail%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer Name: <%=result.buyerName%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer mobile: <%=result.buyerMobile%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer Address line 1: <%=result.buyerAddline1%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer address line 2: <%=result.buyerAddline2%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer city: <%=result.buyerCity%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer zipcode: <%=result.buyerZipcode%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer state: <%=result.buyerState%></p>
+  <p style="font-family: 'Manrope', sans-serif;">Buyer country: <%=result.buyerCountry%></p>
+    </div>
+<% }) %>
+</div>

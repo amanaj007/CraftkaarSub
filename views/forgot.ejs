@@ -1,0 +1,35 @@
+<%- include ('./partials/header'); -%>
+
+<div class="" style="padding: 0 25% 0 25%">
+
+<h1 style="text-shadow: 0 0 1px #1F51FF, 0 0 1px #1F51FF;
+font-family: 'Manrope', sans-serif;">Forgot password.</h1>
+<h3 style="text-shadow: 0 0 1px #1F51FF, 0 0 1px #1F51FF;
+font-family: 'Manrope', sans-serif;">Enter your email.</h3>
+<form class="" action="/forgot" method="post">
+  <input style="border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  background: #F2F2F2;
+  color: black;
+  border-color: black;
+  box-sizing: border-box;" type="email" name="username" placeholder="email" onkeydown="texx(this);" onkeyup="texx(this);" required>
+  <input style="background-color: black;
+    color: white;
+    padding: 4px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    box-shadow: 0 0 2px #1F51FF, 0 0 3px #1F51FF;
+    border-radius: 5%;
+    font-family: 'Manrope', sans-serif;" type="submit" value="Submit">
+</form>
+
+</div>
+
+<%- include ('./partials/footer'); -%>
