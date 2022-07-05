@@ -1,4 +1,4 @@
-# craftkaarSub is the sub domain of craftkaar.com
+# craftkaarSub is the sub domain of seller.craftkaar.com
 One can see the test version @ https://still-caverns-43279.herokuapp.com/
 to look at the Main domain of craftkaar.com go to https://github.com/amanaj007/craftkaarMain
 
